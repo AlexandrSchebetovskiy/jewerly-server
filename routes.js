@@ -7,9 +7,22 @@ const Blog = require('./models/blog')
 const About = require('./models/about')
 const Gallery = require('./models/gallery')
 const Contact = require('./models/contact')
+const GetCard = require('./models/getcard')
+const Order = require('./models/orders')
+const keys = require('./keys/')
+const orderMail = require('./emails/order')
 
+const smtpTransport = require('nodemailer-smtp-transport')
 
-
+let transporter = nodemailer.createTransport(smtpTransport({
+  service: 'gmail',
+  secure:true,
+  host: 'smtp.gmail.com',
+  auth: {
+    user: keys.MAIL_USERNAME,
+    pass: keys.MAIL_PASSWORD,
+  },
+}))
 //START ROUTE
 ////////////////////////////////////////////////
 router.get('/', (req, res) => {
@@ -42,9 +55,8 @@ router.get('/server/blog', async (req, res) => {
 //POST ROUTES
 ////////////////////////////////////////////////
 router.post('/contact', async (req, res) => {
-  console.log(req.body)
   const data = req.body
-  
+  console.log(data);
   const date =  Date.now()
 
   const contact = new Contact({
@@ -55,14 +67,37 @@ router.post('/contact', async (req, res) => {
     date
   })
   contact.save()
-  res.redirect('/')
+  res.json({"test":true})
+  // res.redirect('/')
 })
 router.post('/order', async (req, res) => {
-
+  const data = req.body
+  console.log(data.dataCart)
+  const order = new Order({
+    name: data.name,
+    email: data.mail,
+    phone: data.phone,
+    adress: data.adress,
+    promo: data.promo,
+    cart: {
+      items: data.dataCart
+    }
+  })
+  order.save()
+  transporter.sendMail(orderMail(data.mail, data.dataCart))
+  res.json({"test":true})
 })
 router.post('/getcard', async (req, res) => {
   const data = req.body
-  res.redirect('/')
+  console.log(data);
+  const getcard = new GetCard({
+    name: data.name,
+    mail: data.mail,
+    tel: data.phone,
+  })
+  getcard.save()
+  res.json({"test":true})
+  // res.redirect('/')
 })
 
 module.exports = router

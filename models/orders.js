@@ -18,18 +18,23 @@ const order = new Schema({
     required: true 
   },
   cart: {
-    name: {
-      type: String,
-      required: true 
-    },
-    id: {
-      type: String,
-      required: true 
-    },
-    count: {
-      type: Number,
-      required: true
-    }
+    items: [
+      {
+        name: {
+          type: String,
+          required: true 
+        },
+        id: {
+          type: String,
+          required: true 
+        },
+        count: {
+          type: Number,
+          required: true,
+          default: 1
+        }
+      }
+    ]
   }
 })
 
