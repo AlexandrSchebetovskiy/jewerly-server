@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "img/slider/slider_1.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 2,
+    "img": "img/slider/slider_2.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 3,
+    "img": "img/about/inst_1.jpg", 
+    "name": "Name123",
+    "type":"earring"
+  },
+  {
+    "id": 4,
+    "img": "img/about/inst_2.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 5,
+    "img": "img/about/inst_3.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 6,
+    "img": "img/about/inst_4.jpg", 
+    "name": "name",
+    "type":"earring"
+  },
+  {
+    "id": 7,
+    "img": "img/about/inst_5.jpg", 
+    "name": "name",
+    "type":"necklace"
+  },
+  {
+    "id": 8,
+    "img": "img/about/history-1.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 9,
+    "img": "img/blog/image-7.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 10,
+    "img": "img/blog/image-8.jpg", 
+    "name": "name",
+    "type":"earring"
+  },
+  {
+    "id": 11,
+    "img": "img/blog/image-9.jpg", 
+    "name": "name",
+    "type":"ring"
+  },
+  {
+    "id": 12,
+    "img": "img/blog/image-18.jpg", 
+    "name": "name",
+    "type":"ring"
+  }
+]

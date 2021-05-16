@@ -1,0 +1,78 @@
+{
+  "bestsellers":[
+    {
+      "id": "el23",
+      "name": "Golden Flower",
+      "price": 550.00,
+      "img": "img/cards/product-23.png",
+      "type":"earring"
+    },
+    {
+      "id": "el24",
+      "name": "Platinum earring",
+      "price": 550.00,
+      "img": "img/cards/product-24.png",
+      "type":"earring"
+    },
+    {
+      "id": "el26",
+      "name": "Ruby on Golden rails",
+      "price": 550.00,
+      "img": "img/cards/product-26.png",
+      "type":"earring"
+    },
+    {
+      "id": "el27",
+      "name": "Angels wings",
+      "price": 550.00,
+      "img": "img/cards/product-27.png",
+      "type":"earring"
+    }
+  ],
+  "blog":[
+    {
+      "id":"blog1",
+      "title": "JEWERLY FOR SUNSHINE",
+      "date": {
+        "day": "28",
+        "month": "September",
+        "year": "2020"
+      },
+      "img": "img/blog/image-18.jpg",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum."
+    },
+    {
+      "id":"blog2",
+      "title": "JEWERLY FOR SUNSHINE",
+      "date": {
+        "day": "28",
+        "month": "September",
+        "year": "2020"
+      },
+      "img": "img/blog/image-9.jpg",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum."
+    },
+    {
+      "id":"blog3",
+      "title": "JEWERLY FOR SUNSHINE",
+      "date": {
+        "day": "28",
+        "month": "September",
+        "year": "2020"
+      },
+      "img": "img/blog/image-7.jpg",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum."
+    },
+    {
+      "id":"blog4",
+      "title": "JEWERLY FOR SUNSHINE",
+      "date": {
+        "day": "28",
+        "month": "September",
+        "year": "2020"
+      },
+      "img": "img/blog/image-7.jpg",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nam sapiente animi itaque culpa, deserunt reprehenderit autem necessitatibus cumque aut quae voluptatem perferendis voluptatum debitis minima optio sed laboriosam ipsum."
+    }
+  ]
+}
