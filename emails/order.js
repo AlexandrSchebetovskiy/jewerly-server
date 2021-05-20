@@ -1,10 +1,15 @@
-module.exports = function(to, cart){
+module.exports = function(to, data){
     let items = ``
+    cart = data.dataCart
     cart.forEach(i=> {
       items += `
-      <div>x${i.count} of ${i.name}</div>
+      <tr>
+        <td>${i}</td>
+      </tr>
       `
     })
+
+
     return {
     from: '"Jewwrly Store" <s.shebet@gmail.com>',
     to: to,
@@ -12,7 +17,15 @@ module.exports = function(to, cart){
     html:`
     <h1>Order</h1>
     <hr>
-    ${items}
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+      ${items}
+    </table>
     `
     }
   }
