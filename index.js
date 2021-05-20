@@ -3,17 +3,13 @@ const path = require('path')
 const routes = require('./routes')
 const mongoose = require('mongoose')
 const mongoURI = 'mongodb+srv://Alex:uMT22fXLGdeqn99n@cluster0.m31es.mongodb.net/jewerly'
-const Store = require('./models/store')
-const Bestseller = require('./models/bestseller')
-const Blog = require('./models/blog')
-const About = require('./models/about')
-const Gallery = require('./models/gallery')
-const be = require('./public/server/Home.json')
-const bodyParser = require('body-parser')
+const keys = require('./keys')
 const app = express()
+const bodyParser = require('body-parser')
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json());
 app.use('/', routes)
 const PORT = process.env.PORT || 3000
 
@@ -21,8 +17,9 @@ const PORT = process.env.PORT || 3000
 
 
 async function start() {
+  console.log(keys)
   try {
-    await mongoose.connect(mongoURI, {
+    await mongoose.connect(keys.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify:false ,
